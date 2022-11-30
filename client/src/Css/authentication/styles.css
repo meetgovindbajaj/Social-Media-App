@@ -1,0 +1,26 @@
+.auth--header {
+  font-size: max(6vw, 13vmin);
+  font-weight: bold;
+  font-family: sono, sans-serif;
+}
+
+.auth--header-left {
+  padding-right: 5px;
+}
+
+.auth--header-right {
+  padding-left: 5px;
+  color: var(--red-60);
+}
+
+.auth--body {
+  width: max(40vw, 100vmin);
+  margin-block: 2rem;
+  padding-inline: 1rem;
+  font-family: sono, sans-serif !important;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+}

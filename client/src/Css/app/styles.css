@@ -1,0 +1,35 @@
+.app--layout {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -ms-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+}
+
+.app--layout[data-mode="true"] {
+  background-color: var(--lm-app-layout-bg);
+  color: var(--lm-app-layout-c);
+  border-color: var(--lm-border-c);
+}
+
+.app--layout[data-mode="false"] {
+  background-color: var(--dm-app-layout-bg);
+  color: var(--dm-app-layout-c);
+  border-color: var(--dm-border-c);
+}
+
+@media only screen and (max-width: 500px), (max-height: 500px) {
+  .app--layout {
+    flex-direction: column;
+  }
+}

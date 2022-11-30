@@ -1,0 +1,222 @@
+/* ---------------------------------------------------------------------------- */
+/* @hook-css --Custom_Card : start */
+
+.card--container {
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+  text-align: center !important;
+  justify-content: center;
+  max-width: 470px;
+  min-height: 700px;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--smoke-light);
+  backdrop-filter: var(--blur-1);
+  color: var(--neutral-20);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  border: none;
+  outline: none;
+}
+.card--container:hover {
+  background-color: var(--smoke-light-black);
+  backdrop-filter: var(--blur-5);
+  color: var(--white);
+}
+.card--img-wrapper {
+  width: var(--card-width-1200);
+  height: var(--card-img-height);
+  overflow: hidden;
+  border-bottom: 1px solid var(--neutral-70);
+  margin-bottom: 0.5rem;
+}
+.card--name,
+.card--date,
+.card--desc {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card--name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card--date {
+  color: var(--neutral-30);
+  font-size: small;
+}
+.card--desc {
+  font-size: small;
+  height: 7rem;
+  overflow: hidden;
+  padding-inline: 1rem;
+}
+.card--hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-70) !important;
+}
+@media screen and (max-width: 1200px) {
+  .card--container,
+  .card--img-wrapper {
+    width: var(--card-width-1000);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .card--container,
+  .card--img-wrapper {
+    width: var(--card-width-800);
+  }
+}
+@media screen and (max-width: 800px) {
+  .card--container,
+  .card--img-wrapper {
+    width: var(--card-width-600);
+  }
+}
+@media screen and (max-width: 600px) {
+  .card--container,
+  .card--img-wrapper {
+    width: var(--card-width-400);
+  }
+}
+
+/* @hook-css --Custom_Card : end */
+/* ---------------------------------------------------------------------------- */
+/* @hook-css --Custom_Button : start */
+
+.button--back-abs {
+  position: absolute;
+  padding: 1rem;
+}
+
+/* @hook-css --Custom_Button : end */
+/* ---------------------------------------------------------------------------- */
+/* @hook-css --Mui_Tooltip : start */
+
+.MuiTooltip-tooltip {
+  background-color: var(--neutral-90) !important;
+  font-size: medium !important;
+}
+
+/* @hook-css --Mui_Tooltip : end */
+/* ---------------------------------------------------------------------------- */
+/* @hook-css --Loader : start */
+
+.react-loader {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.animated-loader {
+  position: absolute;
+  height: 5px;
+  width: 1000%;
+  overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgb(253, 57, 103) 14%,
+    rgb(247, 241, 62) 42%,
+    rgb(251, 53, 248) 87%
+  );
+  background-repeat: repeat-x;
+  background-size: 50%;
+  z-index: 100;
+  animation: loading-animation 1.7s ease infinite;
+  -webkit-animation: loading-animation 1.7s ease infinite;
+}
+@keyframes loading-animation {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+/* @hook-css --Loader : end */
+/* ---------------------------------------------------------------------------- */
+/* @hook-css --Navbar : start */
+
+.app--navbar-top {
+  display: none;
+  z-index: var(--navbar-zIndex);
+  background-color: inherit;
+}
+.app--navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80px;
+  height: 100vh;
+  border: none;
+  border-right: 1px solid;
+  border-color: inherit;
+  z-index: var(--navbar-zIndex);
+  background-color: inherit;
+}
+.app--navbar-header {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+.app--navbar-item {
+  width: 100%;
+  height: 70px;
+  display: grid;
+  place-items: center;
+}
+@media only screen and (max-width: 500px), (max-height: 500px) {
+  .app--navbar-top {
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: inherit;
+  }
+  .app--navbar {
+    position: fixed;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-top: 1px solid;
+    border-color: inherit;
+  }
+  .app--navbar-header {
+    display: none;
+  }
+  .app--navbar-header-extra {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+  .app--navbar-item {
+    width: 25vw;
+    height: 100%;
+  }
+  .app--navbar-extra {
+    display: none;
+  }
+}
+
+/* @hook-css --Navbar : end */
+/* ---------------------------------------------------------------------------- */

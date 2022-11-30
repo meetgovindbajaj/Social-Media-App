@@ -1,0 +1,61 @@
+.settings--wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  min-height: max(580px, 80vh);
+  overflow: hidden;
+  border: 2px solid;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.settings--navigation {
+  width: 30%;
+  height: 100%;
+  border-right: 2px solid;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.MuiToggleButtonGroup-root {
+  height: 100% !important;
+  display: flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.MuiToggleButtonGroup-grouped {
+  border: none !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  height: 400px;
+  text-transform: capitalize !important;
+}
+
+@media only screen and (max-width: 950px) {
+  .settings--wrapper {
+    height: auto;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .settings--navigation {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px), (max-height: 500px) {
+}
